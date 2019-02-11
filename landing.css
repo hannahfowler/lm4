@@ -1,0 +1,232 @@
+/* color palette
+green: #a4c32f
+orange: #f04f1b
+blue: #3AA5D1 */
+html{
+    font-size: 62.5%;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4rem;
+}
+
+#scarf{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border: none;
+  border-bottom: 1px solid grey;
+  flex-wrap: nowrap;
+  width: 100%;
+  height: 5rem;
+}
+
+#scarf #left{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#scarf #left i{
+  font-size: 18px;
+  color: grey;
+  margin: 10px;
+}
+#scarf #right{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#mainBox{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 3rem 7rem;
+}
+
+#mainBox .header{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  /* background-color: #efefef; */
+  border-bottom: 0.1rem solid #dadce0;
+  width: 95%;
+  /* padding: 1rem 1rem 0.5rem 0rem; */
+  color: #a4c32f;
+}
+
+.header h1{
+    color: black;
+    font-size: 3rem;
+}
+
+.header i{
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+
+#folioBox{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  min-width: 200px;
+}
+
+#macheBox{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.cardList{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  padding-left: 2.4rem;
+  padding-right: 3.5rem;
+  margin: 2rem 0rem;
+}
+
+.card{
+  background-clip: padding-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  border: 0.1rem solid #dadce0;
+  border-radius: 0.8rem;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.folioCard{
+    height: 20rem;
+    width: 18rem;
+    margin: 0rem 1rem 2rem 1rem;    
+}
+
+.macheCard{
+    height: 35rem;
+    width: 29rem;
+    margin: 0rem 3rem 2rem 1rem;
+}
+
+.topCard{
+  display: block;
+  overflow: hidden;
+  height: 80%;
+  width: 100%;
+}
+
+.topCard .macheImage{
+  background-image: url(portfolio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+}
+
+.topCard .folioImage{
+  background-image: url(folio.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+}
+
+.topCard .overlay{
+  background-color: #2D3338;
+  opacity: .7;
+  height: 80%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.topCard .headText{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 80%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.headText h2{
+  /* padding-top: 15rem; */
+  padding-left: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  order: 1;
+  position: relative;
+}
+
+.headText h2 a{
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ownerName{
+    position: relative;
+    color: #fff;
+    display: block;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+
+}
+
+#macheName{
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 2.8rem;
+}
+
+#folioName{
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 2.8rem;
+}
+
+.bottomCard{
+    border-top: 0.1rem solid #dadce0;
+    /* height: 5rem; */
+    height: 20%;
+    bottom: 0;
+    /* position: absolute; */
+}
+
+.bottomCard .descText{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    font-style: italic;
+    /* height: inherit; */
+    position: relative;
+}
